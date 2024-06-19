@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitnessFood</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #eaf7ea; /* Fondo verde claro */
+            text-align: center;
+        }
+
+        header {
+            background-color: #2e7d32; /* Verde oscuro */
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            color: #2e7d32; /* Verde oscuro */
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 10px 0;
+            color: #4caf50; /* Verde intermedio */
+        }
+
+        /* Estilos para las tablas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            margin: 0 auto;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background: #2e7d32; /* Verde oscuro */
+            color: #fff;
+        }
+
+        td {
+            background: #e8f5e9; /* Verde muy claro */
+        }
+
+        /* Estilos para el pie de página */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #2e7d32; /* Verde oscuro */
+            color: #fff;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        
+        /* Estilos para las imágenes en la tabla */
+        .table-img {
+            max-width: 100px;
+            max-height: 100px;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function calcularProteinas() {
+            var peso = document.getElementById('peso').value;
+            if(peso && !isNaN(peso)) {
+                var proteinas = peso * 2;
+                document.getElementById('resultado').innerText = 'Necesitas consumir ' + proteinas + ' gramos de proteína al día.';
+            } else {
+                document.getElementById('resultado').innerText = 'Por favor, ingresa un peso válido.';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>FitnessFood</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Introducción</h2>
+            <p>Bienvenido a FitnessFood. Aquí te proporcionamos información sobre cómo mejorar tu rendimiento en el gimnasio y llevar una alimentación saludable.</p>
+        </section>
+        <section>
+            <h2>Cómo Mejorar en el Gym</h2>
+            <p>Para mejorar en el gimnasio, es esencial seguir estos consejos:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Consejo</th>
+                        <th>Descripción</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Planifica tus entrenamientos</td>
+                        <td>Diseña una rutina de ejercicios que se ajuste a tus objetivos y nivel de condición física.</td>
+                        <td><img src="C:\Users\carlo\Downloads\entrena.jpg" alt="Planifica tus entrenamientos" class="table-img"></td>
+                    </tr>
+                    <tr>
+                        <td>Descansa adecuadamente</td>
+                        <td>El descanso es crucial para la recuperación muscular. Asegúrate de dormir entre 7 y 9 horas cada noche.</td>
+                        <td><img src="C:\Users\carlo\Downloads\descanso.jpg" alt="Descanso adecuado" class="table-img"></td>
+                    </tr>
+                    <tr>
+                        <td>Mantén una actitud positiva</td>
+                        <td>La motivación y una mentalidad positiva son claves para alcanzar tus metas.</td>
+                        <td><img src="C:\Users\carlo\Downloads\positivo.jpg" alt="Actitud positiva" class="table-img"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Cómo Comer Bien</h2>
+            <p>Una buena alimentación es clave para obtener los mejores resultados en el gimnasio:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Consejo</th>
+                        <th>Descripción</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Consume proteínas adecuadas</td>
+                        <td>Las proteínas son esenciales para la reparación y el crecimiento muscular. Incluye en tu dieta fuentes de proteínas como pollo, pescado, huevos y legumbres.</td>
+                        <td><img src="C:\Users\carlo\Downloads\prote.jpg" alt="Consume proteínas adecuadas" class="table-img"></td>
+                    </tr>
+                    <tr>
+                        <td>Hidrátate bien</td>
+                        <td>Mantenerse hidratado es fundamental para el rendimiento físico. Bebe al menos 2 litros de agua al día y ajusta esta cantidad según tu nivel de actividad.</td>
+                        <td><img src="C:\Users\carlo\Downloads\hidratacion.jpg" alt="Hidratación adecuada" class="table-img"></td>
+                    </tr>
+                    <tr>
+                        <td>Incorpora carbohidratos complejos</td>
+                        <td>Los carbohidratos son la principal fuente de energía. Opta por carbohidratos complejos como avena, arroz integral y batatas.</td>
+                        <td><img src="C:\Users\carlo\Downloads\carbohidratos.jpg" alt="Carbohidratos complejos" class="table-img"></td>
+                    </tr>
+                    <tr>
+                        <td>No olvides las grasas saludables</td>
+                        <td>Las grasas saludables, como las que se encuentran en el aguacate, nueces y aceite de oliva, son importantes para la salud general y el rendimiento físico.</td>
+                        <td><img src="C:\Users\carlo\Downloads\grasas.jpg" alt="Grasas saludables" class="table-img"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Calcula tu Ingesta de Proteínas</h2>
+            <p>Introduce tu peso en kilogramos para calcular cuántos gramos de proteína necesitas consumir al día.</p>
+            <input type="number" id="peso" placeholder="Tu peso en kg">
+            <button onclick="calcularProteinas()">Calcular</button>
+            <p id="resultado"></p>
+        </section>
+        <section>
+            <h2>Opciones Saludables</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Alimentos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Proteínas</td>
+                        <td>Pollo, Pescado, Huevos, Legumbres, Tofu</td>
+                    </tr>
+                    <tr>
+                        <td>Frutas y Verduras</td>
+                        <td>Manzanas, Plátanos, Brócoli, Espinacas, Zanahorias</td>
+                    </tr>
+                    <tr>
+                        <td>Granos y Cereales</td>
+                        <td>Avena, Arroz Integral, Quinoa, Pan Integral</td>
+                    </tr>
+                    <tr>
+                        <td>Lácteos</td>
+                        <td>Leche, Yogur, Queso, Kefir</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 FitnessFood. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+
